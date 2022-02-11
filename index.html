@@ -9,9 +9,13 @@
         *{
             background: #999;
         }
+        h1{
+            text-align: center;
+        }
         .container{
             width: 60%;
             height: 80vh;
+            margin: auto;
             border: 1px solid green;
         }
         .container div{
@@ -27,37 +31,55 @@
             font-size: 1.2rem;
         }
         .container label{
-            margin-right: 5px;
+            margin: 0 10px;
+        }
+        .calc{
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+        }
+        p{
+            margin: 2%;
+            font-size: 1.5rem;
+            color: #67da25;
+            text-shadow: 0 0 5px #000;
         }
     </style>
 </head>
 <body>
+        <h1>Passenger Counting System</h1>
     <div class="container">
     <div class="p1">
         <label for="s1">station</label>
-        <input type="text" name="s1" id="s1" placeholder="  start">
-        <button id="btns1">Go</button>
+        <input type="number" name="s1" id="s1" placeholder="  start" value=0>
+        
     </div>
     <div class="p2">
-        <label for="s2">parade 01</label>
-        <input type="text" name="s2" id="s2" placeholder="  Up">
-        <input type="text" name="" id="b2" placeholder="  Down">
-        <button id="btns2">Go</button>
+        <label for="s2">station 02</label>
+        <label for="s2">Up</label>
+        <input type="number" name="s2" id="s2" placeholder="  Up" value=0>
+        <label for="b2">Down</label>
+        <input type="number" name="b2" id="b2" placeholder="  Down"value=0>
+        
     </div>
     <div class="p3">
-        <label for="s3">parade 03</label>
-        <input type="text" name="s3" id="s3" placeholder="  Up">
-        <input type="text" name="" id="b3" placeholder="  Down">
-        <button id="btns3">Go</button>
+        <label for="s2">station 03</label>
+        <label for="s3">Up</label>
+        <input type="number" name="s3" id="s3" placeholder="  Up" value=0>
+        <label for="b3">Down</label>
+        <input type="number" name="b3" id="b3" placeholder="  Down" value=0>
+        
     </div>
     <div class="p4">
-        <label for="s4">parade 04</label>
-        <input type="text" name="s4" id="s4" placeholder="  Up">
-        <input type="text" name="" id="b4" placeholder="  Down">
-        <button id="btns4">Go</button>
+        <label for="s2">station 04</label>
+        <label for="s4">Up</label>
+        <input type="number" name="s4" id="s4" placeholder="  Up" value=0>
+        <label for="b4">Down</label>
+        <input type="number" name="b4" id="b4" placeholder="  Down" value=0>
+        
     </div>
     <div class="calc">
-        <input type="text" name="result" id="result" disabled placeholder="  result">
+        <p id="result"></p>
         <button id="btnresult"> Calc</button>
     </div>
 </div>
