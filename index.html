@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: #999;
+        }
+        .container{
+            width: 60%;
+            height: 80vh;
+            border: 1px solid green;
+        }
+        .container div{
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: 15%;
+            margin: auto;
+        }
+
+        input, button, label{
+            height: 30%;
+            font-size: 1.2rem;
+        }
+        .container label{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="p1">
+        <label for="s1">station</label>
+        <input type="text" name="s1" id="s1" placeholder="  start">
+        <button id="btns1">Go</button>
+    </div>
+    <div class="p2">
+        <label for="s2">parade 01</label>
+        <input type="text" name="s2" id="s2" placeholder="  Up">
+        <input type="text" name="" id="b2" placeholder="  Down">
+        <button id="btns2">Go</button>
+    </div>
+    <div class="p3">
+        <label for="s3">parade 03</label>
+        <input type="text" name="s3" id="s3" placeholder="  Up">
+        <input type="text" name="" id="b3" placeholder="  Down">
+        <button id="btns3">Go</button>
+    </div>
+    <div class="p4">
+        <label for="s4">parade 04</label>
+        <input type="text" name="s4" id="s4" placeholder="  Up">
+        <input type="text" name="" id="b4" placeholder="  Down">
+        <button id="btns4">Go</button>
+    </div>
+    <div class="calc">
+        <input type="text" name="result" id="result" disabled placeholder="  result">
+        <button id="btnresult"> Calc</button>
+    </div>
+</div>
+</body>
+    <script src="app.js"></script>
+</html>

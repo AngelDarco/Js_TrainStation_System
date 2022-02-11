@@ -1,0 +1,5 @@
+
+d.addEventListener('DOMContentLoaded',()=>{
+
+})
+
